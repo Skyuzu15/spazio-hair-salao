@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Meta tags SEO -->
+    <meta name="description"
+        content="Spazio Hair Salão: atendimento personalizado para homens e mulheres. Conheça os serviços e entre em contato para consultar horários.">
+    <meta name="author" content="Spazio Hair Salão">
+    <title>Spazio Hair Salão | Beleza e Estilo</title>
+    <meta name="theme-color" content="#ffffff">
+    <!-- Compartilhamento (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Spazio Hair Salão | Beleza e Estilo">
+    <meta property="og:description"
+        content="Spazio Hair Salão: atendimento personalizado para homens e mulheres. Conheça os serviços e entre em contato para consultar horários.">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Sem JavaScript o formulário não funciona: esconde e mostra o aviso com link direto -->
+    <noscript>
+        <style>
+            #form-agendamento { display: none; }
+        </style>
+    </noscript>
+</head>
+
+<body>
+
+    <!-- ============================================ -->
+    <!-- CABEÇALHO (HEADER)                           -->
+    <!-- ============================================ -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-nome">Spazio</span>
+            <span class="logo-sub">Hair Salão</span>
+        </a>
+
+        <!-- Menu hambúrguer (aparece só no celular) -->
+        <button type="button" class="menu-hamburguer" id="menu-hamburguer" aria-label="Abrir menu"
+            aria-controls="nav-principal" aria-expanded="false">☰</button>
+
+        <!-- Navegação principal -->
+        <nav class="nav-principal" id="nav-principal">
+            <a href="#home">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#agendamento">Agendamento</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <!-- Contato (telefone) -->
+        <div class="contato-header">
+            <a href="tel:+5544999059523" class="telefone" aria-label="Ligar para (44) 99905-9523">
+                (44) 99905-9523
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!-- SEÇÃO HERO (HOME)                            -->
+        <!-- ============================================ -->
+        <section id="home" class="hero">
+            <div class="hero-conteudo">
+                <h1>Sua beleza, nosso compromisso</h1>
+                <p>Atendimento personalizado para homens e mulheres em um espaço pensado para você</p>
+                <a href="#agendamento" class="btn-whatsapp">
+                    Agende seu horário
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SEÇÃO DE SERVIÇOS                            -->
+        <!-- ============================================ -->
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2 class="titulo-secao">Nossos Serviços</h2>
+                <div class="servicos-grid">
+                    <!-- Card 1 -->
+                    <article class="servico-card">
+                        <h3>Corte de Cabelo</h3>
+                        <p>Masculino e Feminino</p>
+                        <a
+                            href="#agendamento"
+                            class="btn-servico"
+                            data-servico="Corte"
+                        >
+                            Agendar
+                        </a>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="servico-card">
+                        <h3>Químicas em Geral</h3>
+                        <p>Progressiva, relaxamento, coloração</p>
+                        <a
+                            href="#agendamento"
+                            class="btn-servico"
+                            data-servico="Química"
+                        >
+                            Agendar
+                        </a>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="servico-card">
+                        <h3>Apliques</h3>
+                        <p>Mega hair, alongamento</p>
+                        <a
+                            href="#agendamento"
+                            class="btn-servico"
+                            data-servico="Aplique"
+                        >
+                            Agendar
+                        </a>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="servico-card">
+                        <h3>Sobrancelha</h3>
+                        <p>Design, henna, micropigmentação</p>
+                        <a
+                            href="#agendamento"
+                            class="btn-servico"
+                            data-servico="Sobrancelha"
+                        >
+                            Agendar
+                        </a>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="servico-card">
+                        <h3>Pintura</h3>
+                        <p>Mechas, luzes, californiana</p>
+                        <a
+                            href="#agendamento"
+                            class="btn-servico"
+                            data-servico="Pintura"
+                        >
+                            Agendar
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SEÇÃO DE DIFERENCIAIS                        -->
+        <!-- ============================================ -->
+        <section id="diferenciais" class="diferenciais">
+            <div class="container">
+                <h2 class="titulo-secao">Por que escolher o Spazio</h2>
+                <div class="diferenciais-grid">
+                    <div class="diferencial-item">
+                        <span class="numero">Cuidado</span>
+                        <p>atendimento personalizado</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="numero">Beleza</span>
+                        <p>serviços para diferentes estilos</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="numero">Estilo</span>
+                        <p>cabelo, química e sobrancelha</p>
+                    </div>
+                    <div class="diferencial-item">
+                        <span class="numero">Spazio</span>
+                        <p>um espaço para você</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SEÇÃO DE CONTATO                             -->
+        <!-- ============================================ -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2 class="titulo-secao">Contato</h2>
+                <div class="contato-info">
+                    <h3>Endereço</h3>
+                    <p>Rua José Bonifácio, 1812</p>
+
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 8:30 às 18:00</p>
+
+                    <h3>Telefone / WhatsApp</h3>
+                    <p><a href="tel:+5544999059523">(44) 99905-9523</a></p>
+
+                    <a href="https://wa.me/5544999059523" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                        Enviar mensagem
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SEÇÃO FORMULARIO                             -->
+        <!-- ============================================ -->
+        <section class="agendamento" id="agendamento">
+            <div class="container">
+                <h2 class="titulo-secao">Agende seu horário</h2>
+
+                <!-- Exibido apenas quando o JavaScript está desativado -->
+                <noscript>
+                    <div class="aviso-noscript">
+                        <p>O formulário precisa de JavaScript para funcionar. Ative o JavaScript no navegador ou fale direto com o salão pelo WhatsApp.</p>
+                        <a href="https://wa.me/5544999059523" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                            Chamar no WhatsApp
+                        </a>
+                    </div>
+                </noscript>
+
+                <form id="form-agendamento" novalidate>
+                    <p class="aviso-formulario">Ao continuar, o WhatsApp será aberto com sua mensagem preenchida. Revise e envie a mensagem pelo próprio WhatsApp para encaminhar a solicitação.</p>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="erro-nome">
+                        <small class="mensagem-erro" id="erro-nome" aria-live="polite"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" autocomplete="tel"
+                            placeholder="(44) 99999-9999" required aria-describedby="erro-telefone" inputmode="tel">
+                        <small class="mensagem-erro" id="erro-telefone" aria-live="polite"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="servico-form">Serviço</label>
+
+                        <select id="servico-form" name="servico" required aria-describedby="erro-servico">
+                            <option value="">Selecione um serviço</option>
+                            <option value="Corte">Corte</option>
+                            <option value="Química">Química</option>
+                            <option value="Aplique">Aplique</option>
+                            <option value="Sobrancelha">Sobrancelha</option>
+                            <option value="Pintura">Pintura</option>
+                        </select>
+
+                        <small class="mensagem-erro" id="erro-servico" aria-live="polite"></small>
+                    </div>
+
+                    <button type="submit" class="btn-whatsapp">
+                        Solicitar agendamento
+                    </button>
+
+                    <p id="mensagem-sucesso" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- RODAPÉ (FOOTER)                              -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-conteudo">
+                <div class="footer-logo">
+                    <h3>Spazio Hair Salão</h3>
+                    <p>Beleza e estilo com qualidade</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2026 Spazio Hair Salão - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interações da página -->
+    <script src="script.js"></script>
+</body>
+
+</html>
